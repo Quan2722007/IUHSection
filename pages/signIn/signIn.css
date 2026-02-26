@@ -58,7 +58,7 @@ section {
 .boxSignIn {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
     width: 100%;
 }
 .boxSignIn .wrapSignIn {
@@ -77,6 +77,9 @@ section {
     font-size: 18px;
     font-weight: 600;
     color: #222222;
+}
+.boxSignIn .wrapSignIn .blockSignIn .titleSignIn.titleSignInChangeHeight {
+    height: auto;
 }
 .boxSignIn .wrapSignIn .blockSignIn input {
     padding: 8px;
