@@ -1,0 +1,339 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 50px;
+    background-color: #1e293b;
+    padding: 50px 0;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+.boxButton .boxPrev {
+    background-color: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+}
+.boxButton .boxPrev i {
+    font-size: 16px;
+}
+.boxButton .boxPrev:hover {
+    color: #00e9ff;
+    justify-content: space-between;
+}
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sectionSignIn {
+    width: 93%;
+}
+.title {
+    font-size: clamp(22px, 4vw, 28px);
+    font-weight: 700;
+    color: #222222;
+}
+.container.containerSignIn {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(249, 248, 248);
+    border-radius: 12px;
+    padding: 32px;
+}
+.boxSignIn {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+.boxSignIn .wrapSignIn {
+    display: flex;
+    gap: 40px;
+}
+.boxSignIn .wrapSignIn .blockSignIn {
+    height: auto;
+    width: calc((100% - 40px) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.boxSignIn .wrapSignIn .blockSignIn .titleSignIn {
+    height: 45px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+}
+.boxSignIn .wrapSignIn .blockSignIn input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid rgb(156, 156, 156);
+    font-size: 16px;
+    outline: none;
+}
+.calendar {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid rgb(156, 156, 156);
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxSignIn .wrapSignIn .blockSignIn input.dateOfBirth {
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+.boxSignIn .wrapSignIn .blockSignIn input.dateOfBirth::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    pointer-events: none;
+}
+.boxSignIn .wrapSignIn .blockSignIn input.dateOfBirth i {
+    opacity: 0.8;
+}
+.boxSignIn .wrapSignIn .blockSignIn select {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid rgb(156, 156, 156);
+    font-size: 16px;
+    outline: none;
+}
+.blockCheck {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+.blockCheck li {
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    color: #222222;
+    align-items: end;
+    gap: 10px;
+}
+.boxSignIn .wrapSignIn .blockCheck li input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+.boxSignIn .wrapSignIn .blockCheck li input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+.blockSignIn textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 8px;
+}
+textarea::placeholder {
+    font-family: "Inter";
+}
+.boxSignIn .wrapSignIn .blockSignIn.blockSignInChangeWidth {
+    width: 100%;
+    height: auto;
+}
+.boxSignIn .wrapSignIn .blockSignIn.blockSignInChangeWidth ul {
+    padding-left: 30px;
+    color: #222222;
+}
+.boxSignIn .wrapSignIn .blockSignIn.blockSignInChangeWidth {
+    font-size: 16px;
+}
+.boxSignIn .wrapSignIn .blockSignIn.blockSignInChangeWidth .blockCheck.blockCheckChange {
+    gap: 100px;
+    justify-content: start;
+    padding-left: 0;
+}
+.blockText {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.blockSignIn.blockSignInChangeWidth textarea {
+    width: 80%;
+}
+.boxButton {
+    display: flex;
+    justify-content: center;
+}
+.boxButton .finished {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+    background-color: #0284c7;
+    color: white;
+    cursor: pointer;
+    font-size: clamp(14px, 3vw, 18px);
+}
+.checkRadio {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+.checkBoxs {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+p {
+    font-size: 13px;
+    color: rgb(255, 32, 32);
+    margin: 0;
+}
+.boxSignIn .wrapSignIn .blockSignIn select {
+    color: #222222;
+}
+main.shadowBox {
+    position: relative;
+}
+.shadowWin {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.564);
+    z-index: 20;
+}
+.boxNotification {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 95%;
+    height: auto;
+    padding: 32px;
+    background-color: white;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 12px;
+    z-index: 25;
+}
+.boxNotification .wrapContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.boxNotification .wrapContent h1 {
+    margin: 0;
+    color: rgb(8, 118, 13);
+    font-size: clamp(20px, 4vw, 28px);
+    text-align: center;
+    font-weight: 700;
+}
+.boxNotification .wrapContent h3 {
+    font-size: clamp(16px, 3vw, 22px);
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    color: #222222;
+}
+.boxNotification .wrapButton {
+    display: flex;
+    justify-content: center;
+}
+.boxNotification .wrapButton button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+    background-color: #0284c7;
+    color: white;
+    cursor: pointer;
+    font-size: clamp(14px, 3vw, 18px);
+}
+@media only screen and (max-width: 1024px) {
+    .boxSignIn .wrapSignIn {
+        gap: 20px;
+    }
+    .boxSignIn .wrapSignIn .blockSignIn {
+        width: calc((100% - 20px) / 2);
+    }
+    .blockSignIn.blockSignInChangeWidth textarea {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .boxSignIn {
+        gap: 20px;
+    }
+    .boxSignIn .wrapSignIn {
+        flex-direction: column;
+    }
+    .boxSignIn .wrapSignIn .blockSignIn {
+        width: 100%;
+    }
+    .boxSignIn .wrapSignIn .blockSignIn input {
+        font-size: 14px;
+    }
+    .boxSignIn .wrapSignIn .blockSignIn .titleSignIn {
+        font-size: 16px;
+        height: auto;
+    }
+    .blockCheck li {
+        font-size: 14px;
+    }
+    .boxSignIn .wrapSignIn .blockSignIn.blockSignInChangeWidth .blockCheck.blockCheckChange {
+        justify-content: space-between;
+    }
+    .boxSignIn .wrapSignIn .blockCheck li input[type="checkbox"] {
+        width: 17px;
+        height: 17px;
+        margin-bottom: 0;
+    }
+    .boxSignIn .wrapSignIn .blockCheck li input[type="radio"] {
+        width: 17px;
+        height: 17px;
+        margin-bottom: 0;
+    }
+    .checkRadio {
+        width: 17px;
+        height: 17px;
+        margin-bottom: 0;
+    }
+    .checkBoxs {
+        width: 17px;
+        height: 17px;
+        margin-bottom: 0;
+    }
+    .container.containerSignIn {
+        padding: 32px 16px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .boxNotification {
+        max-width: none;
+    }
+}

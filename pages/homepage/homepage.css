@@ -1,0 +1,327 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 50px;
+    background-color: #1e293b;
+}
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sectionHero {
+    position: relative;
+}
+.sectionHero .backgroundHero {
+    background-image: url("../../assets/hero.png");
+    width: 100%;
+    height: 600px;
+    background-position: bottom;
+    background-size: cover;
+}
+.sectionHero .backgroundHero::before {
+    position: absolute;
+    content: "";
+    background-color: #00000073;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.container.containerHero {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%);
+}
+.sectionHero .wrapContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.sectionHero .wrapContent .titleHero {
+    font-size: clamp(24px, 4vw, 48px);
+    font-weight: 700;
+}
+.sectionHero .wrapContent .titleHero span {
+    color: #00b3ff;
+}
+.sectionHero .wrapContent .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    font-size: clamp(15px, 3vw, 24px);
+    font-weight: 500;
+    text-align: center;
+    width: 70%;
+}
+.container.containerHero .buttonHero {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 0;
+    font-size: clamp(14px, 3vw, 18px);
+    font-weight: 700;
+    color: white;
+    background-color: #0ea5e9;
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    outline: none;
+}
+.container.containerHero .buttonHero:hover {
+    background: #0284c7;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(14, 165, 233, 0.35);
+}
+.container.containerHero .buttonHero:active {
+    transform: translateY(0);
+}
+.container.containerHero .buttonHero i {
+    font-size: 15px;
+}
+.container.containerTime {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.title {
+    font-size: clamp(22px, 4vw, 28px);
+    font-weight: 700;
+    color: white;
+}
+.container.containerTime .wrapTime {
+    display: flex;
+    gap: 10px;
+}
+.container.containerTime .wrapTime .blockBar {
+    position: relative;
+    width: 20px;
+    height: 270px;
+}
+.container.containerTime .wrapTime .blockBar .bar {
+    position: absolute;
+    height: 0;
+    width: 3px;
+    border-radius: 12px;
+    background-color: #00e9ff;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+.container.containerTime .wrapTime .blockBar::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 3px;
+    border-radius: 12px;
+    z-index: 0;
+}
+.container.containerTime .wrapTime .blockBar .circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    top: 0;
+    left: 0;
+}
+.container.containerTime .wrapTime .blockBar .circle.active {
+    background-color: #00e9ff;
+}
+.container.containerTime .wrapTime .blockBar .circle.circle1 {
+    top: 50px;
+}
+.container.containerTime .wrapTime .blockBar .circle.circle2 {
+    top: 100px;
+}
+.container.containerTime .wrapTime .blockBar .circle.circle3 {
+    top: 150px;
+}
+.container.containerTime .wrapTime .blockBar .circle.circle4 {
+    top: 200px;
+}
+.container.containerTime .wrapTime .blockBar .circle.circle5 {
+    top: 250px;
+}
+ul.contentTime {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+ul.contentTime .content {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.901);
+}
+ul.contentTime .content.active {
+    color: #00e9ff;
+}
+ul.contentTime .content.content1 {
+    top: 50px;
+}
+ul.contentTime .content.content2 {
+    top: 100px;
+}
+ul.contentTime .content.content3 {
+    top: 150px;
+}
+ul.contentTime .content.content4 {
+    top: 200px;
+}
+ul.contentTime .content.content5 {
+    top: 250px;
+}
+.sectionPrograme {
+    padding: 32px 0;
+    width: 100%;
+    background-color: #111827;
+}
+.container.containerPro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container.containerPro .blockConetentPro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container.containerPro .blockConetentPro p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    width: 80%;
+}
+.container.containerPro .blockLink {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.container.containerPro .blockLink a {
+    display: flex;
+    align-items: center;
+    color: #49e8ff;
+    font-size: 16px;
+}
+.container.containerPro .blockLink .i {
+    font-size: 16px;
+    text-decoration: none;
+}
+.sectionFAQ {
+    padding-bottom: 50px;
+}
+.container.containerFAQ {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container.containerFAQ .wrapFAQContent {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.container.containerFAQ .wrapFAQContent .blockFAQ {
+    padding: 16px;
+    width: calc((80% - 30px) / 2);
+    height: 60px;
+    background-color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+.container.containerFAQ .wrapFAQContent .blockFAQ .question {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+}
+.container.containerFAQ .wrapFAQContent .blockFAQ .question:hover {
+    color: rgb(211, 8, 211);
+}
+.container.containerFAQ .wrapFAQContent .blockFAQ .reply {
+    display: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222222;
+}
+.container.containerFAQ .wrapFAQContent .blockFAQ .question i {
+    transform: rotate(0);
+    transition: 0.3s ease;
+}
+.container.containerFAQ .wrapFAQContent .blockFAQ.active {
+    height: 120px;
+}
+.container.containerFAQ .wrapFAQContent .blockFAQ.active .question {
+    color: rgb(211, 8, 211);
+}
+.container.containerFAQ .wrapFAQContent .blockFAQ.active .question i {
+    transform: rotate(180deg);
+}
+.container.containerFAQ .wrapFAQContent .blockFAQ.active .reply {
+    display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container.containerFAQ .wrapFAQContent .blockFAQ {
+        width: calc((100% - 30px) / 2);
+    }
+    .container.containerPro .blockConetentPro p {
+        width: 100%;
+    }
+    .sectionHero .wrapContent .content {
+        width: 85%;
+    }
+    .container.containerHero {
+        top: 28%;
+    }
+    .sectionHero .backgroundHero {
+        height: 430px;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .container.containerHero {
+        top: 37%;
+        gap: 30px;
+    }
+    .sectionHero .backgroundHero {
+        height: 330px;
+    }
+    .sectionHero .wrapContent .content {
+        width: 100%;
+    }
+    .container.containerPro .blockConetentPro p span {
+        display: none;
+    }
+    .container.containerFAQ .wrapFAQContent {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .container.containerFAQ .wrapFAQContent .blockFAQ {
+        width: 100%;
+    }
+}

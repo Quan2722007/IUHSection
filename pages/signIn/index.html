@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="signIn.css" />
+        <link rel="stylesheet" href="../../shared/style.css" />
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <section class="boxButton">
+                <div class="container .containerPrev">
+                    <a href="../../pages/homepage/index.html">
+                        <button class="boxPrev">
+                            <span><i class="fa-solid fa-arrow-left"></i></span> Quay lại
+                        </button>
+                    </a>
+                </div>
+            </section>
+            <section class="sectionSignIn">
+                <div class="container containerSignIn">
+                    <div class="title">Thông tin form đăng ký</div>
+                    <div class="boxSignIn">
+                        <div class="wrapSignIn">
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Họ tên</div>
+                                <input type="text" class="username" placeholder="Họ và tên" />
+                                <p class="reports"></p>
+                            </div>
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Ngày sinh</div>
+                                <div class="calendar">
+                                    <input
+                                        type="text"
+                                        class="dateOfBirth"
+                                        placeholder="mm/dd/yy"
+                                        onfocus="
+                                            this.type = 'date';
+                                            this.showPicker();
+                                        "
+                                        onblur="if (!this.value) this.type = 'text';"
+                                    />
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                </div>
+                                <p class="reports"></p>
+                            </div>
+                        </div>
+                        <div class="wrapSignIn">
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Email</div>
+                                <input type="text" class="email" placeholder="user@gmail.com" />
+                                <p class="reports"></p>
+                            </div>
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Số điện thoại</div>
+                                <input type="text" class="phoneNumber" pattern="[0-9]*" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="sđt: 0......." />
+                                <p class="reports"></p>
+                            </div>
+                        </div>
+                        <div class="wrapSignIn">
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Giới tính</div>
+                                <select id="sexUser">
+                                    <option value="">Chọn giới tính</option>
+                                    <option value="male">Nam</option>
+                                    <option value="female">Nữ</option>
+                                    <option value="other">Khác</option>
+                                    <option value="Dont">Không muốn nói</option>
+                                </select>
+                                <p class="reports"></p>
+                            </div>
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Link facebook</div>
+                                <input type="url" class="linkFace" placeholder="https://facebook.com" />
+                                <p class="reports"></p>
+                            </div>
+                        </div>
+                        <div class="wrapSignIn">
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Link github</div>
+                                <input type="url" class="linkGithub" placeholder="https://github.com" />
+                                <p class="reports"></p>
+                            </div>
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Link portfolio</div>
+                                <input type="url" class="linkPortfolio" placeholder="https://portfolio.com" />
+                                <p class="reports"></p>
+                            </div>
+                        </div>
+                        <div class="wrapSignIn">
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Track muốn tham gia</div>
+                                <select name="" id="tracks">
+                                    <option value="">Chọn track</option>
+                                    <option value="FrontEnd">Front-end Developer</option>
+                                    <option value="UIUX">UI/UX for Developer</option>
+                                    <option value="BackEnd">Back-end Developer</option>
+                                    <option value="BA">Business Analyst</option>
+                                </select>
+                                <p class="reports"></p>
+                            </div>
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Bạn có từng tham gia dự án chưa?</div>
+                                <ul class="blockCheck">
+                                    <li>
+                                        Đã từng
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                    <li>
+                                        Chưa từng
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                </ul>
+                                <p class="reports"></p>
+                            </div>
+                        </div>
+                        <div class="wrapSignIn">
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Bạn đã biết React chưa?</div>
+                                <ul class="blockCheck">
+                                    <li>
+                                        Biết rồi
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                    <li>
+                                        Chưa biết
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                </ul>
+                                <p class="reports"></p>
+                            </div>
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Bạn đã từng làm UI/UX chưa?</div>
+                                <ul class="blockCheck">
+                                    <li>
+                                        Đã từng
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                    <li>
+                                        Chưa từng
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                </ul>
+                                <p class="reports"></p>
+                            </div>
+                        </div>
+                        <div class="wrapSignIn">
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Bạn đã từng viết tài liệu BA chưa?</div>
+                                <ul class="blockCheck">
+                                    <li>
+                                        Đã từng
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                    <li>
+                                        Chưa từng
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                </ul>
+                                <p class="reports"></p>
+                            </div>
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Bạn đã biết NodeJS chưa?</div>
+                                <ul class="blockCheck">
+                                    <li>
+                                        Biết rồi
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                    <li>
+                                        Chưa biết
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                </ul>
+                                <p class="reports"></p>
+                            </div>
+                        </div>
+                        <div class="wrapSignIn">
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Bạn muốn học theo hình thức:</div>
+                                <ul class="blockCheck">
+                                    <li>
+                                        Onsite
+                                        <input type="radio" class="checkRadio" name="learning" />
+                                    </li>
+                                    <li>
+                                        Remote
+                                        <input type="radio" class="checkRadio" name="learning" />
+                                    </li>
+                                </ul>
+                                <p class="reports"></p>
+                            </div>
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Bạn có thể tham gia workshop thứ 7 không?</div>
+                                <ul class="blockCheck">
+                                    <li>
+                                        Yes
+                                        <input type="radio" class="checkRadio" name="statuday" />
+                                    </li>
+                                    <li>
+                                        No
+                                        <input type="radio" class="checkRadio" name="statuday" />
+                                    </li>
+                                </ul>
+                                <p class="reports"></p>
+                            </div>
+                        </div>
+                        <div class="wrapSignIn">
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Vì sao bạn muốn tham gia chương trình này?</div>
+                                <textarea name="" id="textareaBox1" placeholder="text..."></textarea>
+                            </div>
+                            <div class="blockSignIn">
+                                <div class="titleSignIn">Bạn mong muốn đạt được điều gì sau 3 tháng?</div>
+                                <textarea name="" id="textareaBox2" placeholder="text..."></textarea>
+                            </div>
+                        </div>
+                        <div class="wrapSignIn">
+                            <div class="blockSignIn blockSignInChangeWidth">
+                                <div class="titleSignIn">Điều khoản</div>
+                                <ul>
+                                    <li>Không spam mentor</li>
+                                    <li>Không bỏ ngang giữa chừng</li>
+                                    <li>Tôn trọng nhóm</li>
+                                    <li>Không đạo code</li>
+                                </ul>
+                                <div class="titleSignIn titleSignInC hange">Bạn có đồng ý điều khoản không?</div>
+                                <ul class="blockCheck blockCheckChange">
+                                    <li>
+                                        Có
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                    <li>
+                                        Không
+                                        <input type="checkbox" class="checkBoxs" />
+                                    </li>
+                                </ul>
+                                <p class="reports"></p>
+                            </div>
+                        </div>
+                        <div class="wrapSignIn">
+                            <div class="blockSignIn blockSignInChangeWidth">
+                                <div class="titleSignIn">Tại sao bạn không đồng ý?</div>
+                                <div class="blockText">
+                                    <textarea name="" id="textareaBox3" placeholder="Bởi vì...."></textarea>
+                                </div>
+                                <p class="reports"></p>
+                            </div>
+                        </div>
+                        <div class="boxButton">
+                            <button class="finished">Nộp đơn</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="boxNotification">
+                <div class="wrapContent">
+                    <h1 class="titleNoti">Form đăng ký đã được gửi đi thành công</h1>
+                    <h3 class="contentNoti">Vui lòng chú ý email của bạn! <span>Chúng tôi sẽ liên hệ lại bạn trong vài ngày tới.</span></h3>
+                </div>
+                <div class="wrapButton">
+                    <a href="../../pages/homepage/index.html">
+                        <button>Trở lại trang chủ</button>
+                    </a>
+                </div>
+            </div>
+            <div class="shadowWin"></div>
+        </main>
+        <footer></footer>
+    </body>
+    <script src="signIn.js"></script>
+    <script src="https://kit.fontawesome.com/c4edd7a73c.js" crossorigin="anonymous"></script>
+    <script src="../../shared/layout.js"></script>
+</html>
