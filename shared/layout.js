@@ -29,14 +29,6 @@ header.innerHTML = `
 footer.innerHTML = `
             <div class="footer">
                 <div class="container containerFooter">
-                    <div class="wrapContent">
-                        <div class="blockContent">
-                            <div class="title">IUH Tech <span>Internship 2026</span></div>
-                            <a href="../../pages/signIn/index.html">
-                                <button class="buttonHero">Đăng ký ngay <i class="fa-solid fa-arrow-right"></i></button>
-                            </a>
-                        </div>
-                    </div>
                     <div class="wrapInformation">
                         <div class="blockInfor">
                             <div class="titleInfor">Địa điểm</div>
@@ -85,10 +77,6 @@ function updateActiveMenu() {
     const navLinks = document.querySelectorAll(".menu a, .nav a");
     navLinks.forEach((link) => link.classList.remove("active"));
     navLinks.forEach((link) => {
-        const href = link.getAttribute("href");
-        // if (currentPath.endsWith("index.html") && !currentPath.includes("pages/")) {
-        //     if (href.includes("#sectionHero")) link.classList.add("active");
-        // }
         if (currentPath.includes("homepage") && link.textContent.trim() === "Trang chủ") {
             link.classList.add("active");
         }
