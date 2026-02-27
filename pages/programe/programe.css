@@ -263,6 +263,7 @@ a {
 @media only screen and (max-width: 758px) {
     .wrapCardMentor {
         gap: 40px;
+        justify-content: center;
     }
     .wrapCardMentor .cardMentor {
         padding: 8px;
